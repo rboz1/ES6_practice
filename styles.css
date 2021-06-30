@@ -1,0 +1,93 @@
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 360px (1fr)[4] 50px;
+      grid-template-rows: 360px repeat(4, 1fr) 50px;
+      grid-template-areas: "slider" "shop" "img-dark" "about" "img-light" "footer";
+  margin: 0;
+}
+
+.grid-container img {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  background: url(images/mobile/mobile-image-hero-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: slider;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 5%;
+  padding-top: 10%;
+  width: 55%;
+}
+
+header nav .toggle-nav {
+  display: none;
+}
+
+header .arrows {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: black;
+  padding: 2% 10% 2% 10%;
+}
+
+.shop {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: shop;
+}
+
+.img-dark {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: img-dark;
+}
+
+.about {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: about;
+}
+
+.img-light {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: img-light;
+}
+
+footer {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+/*# sourceMappingURL=styles.css.map */

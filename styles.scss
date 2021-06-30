@@ -1,0 +1,76 @@
+//Font Styling
+
+
+//Mobile Styles
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 360px repeat(4, 1fr) 50px;
+    grid-template-areas: 
+    "slider"
+    "shop"
+    "img-dark"
+    "about"
+    "img-light"
+    "footer";
+
+    margin: 0;
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+header{
+    background: url(images/mobile/mobile-image-hero-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: center center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    nav{
+        grid-area: slider;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 5%;
+        padding-top: 10%;
+
+        width: 55%;
+
+        .toggle-nav{
+            display: none;
+        }
+    }
+
+    .arrows{
+        align-self: flex-end;
+        background-color: black;
+        padding: 2% 10% 2% 10%;
+
+    }
+}
+
+.shop{
+    grid-area: shop;
+}
+
+.img-dark{
+    grid-area: img-dark;
+}
+
+.about{
+    grid-area: about;
+}
+
+.img-light{
+    grid-area: img-light;
+}
+
+footer{
+    grid-area: footer;
+}

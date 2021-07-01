@@ -13,7 +13,7 @@ $dark-gray: hsl(0, 0%, 27%);
 .grid-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 360px 1fr repeat(3, 0.5fr) 50px;
+    grid-template-rows: 400px 1fr repeat(3, 0.5fr) 50px;
     grid-template-areas: 
     "slider"
     "shop"

@@ -4,8 +4,8 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 1.3fr 1fr (0.5fr)[3] 50px;
-      grid-template-rows: 1.3fr 1fr repeat(3, 0.5fr) 50px;
+  -ms-grid-rows: 360px 1fr (0.5fr)[3] 50px;
+      grid-template-rows: 360px 1fr repeat(3, 0.5fr) 50px;
       grid-template-areas: "slider" "shop" "img-dark" "about" "img-light" "footer";
   margin: 0;
   overflow-x: hidden;

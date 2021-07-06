@@ -53,8 +53,8 @@ header nav {
 }
 
 header nav .toggle-off {
-  padding-left: 10%;
-  padding-top: 25%;
+  padding-left: 12%;
+  padding-top: 18%;
 }
 
 header nav .toggle-on {
@@ -74,7 +74,7 @@ header nav .toggle-on {
   list-style: none;
   text-transform: lowercase;
   margin: 0;
-  padding: 15% 10% 15% 7%;
+  padding: 10% 10% 10% 7%;
   width: 83%;
 }
 

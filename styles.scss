@@ -48,13 +48,42 @@ header{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-left: 5%;
-        padding-top: 10%;
 
-        width: 55%;
+        width: 58%;
 
-        .toggle-nav{
+        .toggle-off{
+            padding-left: 10%;
+            padding-top: 25%;
+        }
+
+        .toggle-on{
             display: none;
+            position: absolute;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            background-color: $white;
+            list-style: none;
+            text-transform: lowercase;
+            margin: 0;
+            padding: 15% 10% 15% 7%;
+            width: 83%;
+
+            li{
+                a{
+                    text-decoration: none;
+                    color: $black;
+                }
+            }
+
+            .menu{
+                padding-left: 5%;
+            }
+            
+            .close{
+                flex-grow: 1;
+            }
         }
     }
 

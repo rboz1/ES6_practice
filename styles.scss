@@ -171,3 +171,129 @@ footer{
         padding-top: 5%;
     }
 }
+
+//Media Queries
+//Tablets
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1200px) {
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.4fr 0.5fr repeat(3, 0.5fr) 50px;
+        grid-template-areas: 
+        "slider"
+        "shop"
+        "img-dark"
+        "about"
+        "img-light"
+        "footer";
+
+    }
+
+    .shop{
+
+        padding: 15% 10%;
+    
+        h2{
+            font-size: 24px;
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 1.7rem;
+
+        }
+    
+        .arrow{
+            width: 35%;
+        }
+    }
+
+    .about{
+        h3{
+            font-size: 20px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 1.7rem;
+        }
+    }
+
+    footer{
+        .attribution{
+            padding: 5%;
+        }
+    }
+  }
+
+//Laptop and beyond
+@media screen 
+  and (min-device-width: 1200px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(3, 0.9fr) 50px;
+        grid-template-areas: 
+        "slider slider slider slider shop shop shop"
+        "slider slider slider slider shop shop shop"
+        "img-dark img-dark about about about img-light img-light"
+        "footer footer footer footer footer footer footer";
+    }
+
+    header{
+        background: url(images/desktop/desktop-image-hero-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: center center;
+        grid-area: slider;
+
+        nav{ 
+            display: flex;
+            .hamburger{
+                display: none;
+            }
+        }
+
+        .angles{
+            position: absolute;
+            right: 28.5%;
+            width: 10.4%;
+            padding: 2% 2%;
+        }
+    }
+
+    .shop{
+        grid-area: shop;
+        padding: 10% 15% 10% 15%;
+
+        h2{
+            font-size: 40px;
+            padding-bottom: 5%;
+        }
+
+        .arrow{
+            padding-bottom: 15%;
+            width: 50%;
+        }
+    }
+
+    .img-dark{
+        grid-area: img-dark;
+    }
+
+    .about{
+        grid-area: about;
+    }
+
+    .img-light{
+        grid-area: img-light;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+
+  }

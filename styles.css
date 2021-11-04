@@ -277,8 +277,13 @@ footer .attribution {
     display: -ms-flexbox;
     display: flex;
   }
-  header nav .hamburger {
+  header nav .toggle-off {
     display: none;
+  }
+  header nav .toggle-on {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   header .angles {
     position: absolute;

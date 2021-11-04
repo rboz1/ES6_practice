@@ -251,8 +251,11 @@ footer{
 
         nav{ 
             display: flex;
-            .hamburger{
+            .toggle-off{
                 display: none;
+            }
+            .toggle-on{
+                display: flex;
             }
         }
 

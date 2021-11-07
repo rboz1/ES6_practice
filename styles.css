@@ -52,9 +52,17 @@ header nav {
   width: 58%;
 }
 
+header nav .desktop-nav ul {
+  display: none;
+}
+
 header nav .toggle-off {
   padding-left: 12%;
   padding-top: 18%;
+}
+
+header nav .logo {
+  padding-left: 50%;
 }
 
 header nav .toggle-on {
@@ -207,13 +215,21 @@ footer {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: footer;
-}
-
-footer .attribution {
   font-size: 11px;
   text-align: center;
-  color: #3e52a3;
-  padding-top: 5%;
+  color: #454545;
+}
+
+footer a {
+  color: #454545;
+}
+
+footer a:visited {
+  color: #454545;
+}
+
+footer p {
+  padding-top: 10px;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
@@ -225,6 +241,14 @@ footer .attribution {
     -ms-grid-rows: 1.4fr 0.5fr (0.5fr)[3] 50px;
         grid-template-rows: 1.4fr 0.5fr repeat(3, 0.5fr) 50px;
         grid-template-areas: "slider" "shop" "img-dark" "about" "img-light" "footer";
+  }
+  .grid-container header
+nav .desktop-nav ul {
+    display: none;
+  }
+  .grid-container header
+nav .logo {
+    padding-left: 60%;
   }
   .shop {
     padding: 15% 10%;
@@ -246,9 +270,6 @@ footer .attribution {
     font-size: 16px;
     line-height: 1.7rem;
   }
-  footer .attribution {
-    padding: 5%;
-  }
 }
 
 @media screen and (min-device-width: 1200px) {
@@ -257,9 +278,9 @@ footer .attribution {
     display: grid;
     -ms-grid-columns: (1fr)[7];
         grid-template-columns: repeat(7, 1fr);
-    -ms-grid-rows: (0.9fr)[3] 50px;
-        grid-template-rows: repeat(3, 0.9fr) 50px;
-        grid-template-areas: "slider slider slider slider shop shop shop" "slider slider slider slider shop shop shop" "img-dark img-dark about about about img-light img-light" "footer footer footer footer footer footer footer";
+    -ms-grid-rows: (1fr)[3] 30px;
+        grid-template-rows: repeat(3, 1fr) 30px;
+        grid-template-areas: "slider slider slider slider shop shop shop" "slider slider slider slider shop shop shop" "img-dark img-dark about about about img-light img-light" "foot foot foot foot foot foot foot";
   }
   header {
     background: url(images/desktop/desktop-image-hero-1.jpg);
@@ -273,17 +294,23 @@ footer .attribution {
     grid-area: slider;
   }
   header nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
   }
-  header nav .toggle-off {
+  header nav .mobile-nav {
     display: none;
   }
-  header nav .toggle-on {
+  header nav .desktop-nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    list-style-type: none;
   }
   header .angles {
     position: absolute;
@@ -329,7 +356,14 @@ footer .attribution {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 7;
-    grid-area: footer;
+    grid-area: foot;
+    color: #454545;
+  }
+  footer a {
+    color: #454545;
+  }
+  footer a:visited {
+    color: #454545;
   }
 }
 /*# sourceMappingURL=styles.css.map */

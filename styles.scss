@@ -7,7 +7,6 @@ $black: hsl(0, 0%, 0%);
 $white: hsl(0, 0%, 100%);
 $dark-gray: hsl(0, 0%, 27%);
 
-
 //Mobile Styles
 
 .grid-container{
@@ -51,9 +50,20 @@ header{
 
         width: 58%;
 
+        .desktop-nav{
+            ul{
+                display: none;
+            }
+            
+        }
+
         .toggle-off{
             padding-left: 12%;
             padding-top: 18%;
+        }
+
+        .logo{
+            padding-left: 50%;
         }
 
         .toggle-on{
@@ -163,12 +173,19 @@ header{
 
 footer{
     grid-area: footer;
+    font-size: 11px; 
+    text-align: center;
+    color: $dark-gray;
 
-    .attribution{
-        font-size: 11px; 
-        text-align: center;
-        color: hsl(228, 45%, 44%);
-        padding-top: 5%;
+    a{
+        color: $dark-gray;
+    }
+    a:visited{
+        color: $dark-gray;
+    }
+
+    p{
+        padding-top: 10px;
     }
 }
 
@@ -190,7 +207,20 @@ footer{
         "img-light"
         "footer";
 
-    }
+        header
+            nav{
+                .desktop-nav{
+                    ul{
+                        display: none;
+                    }
+                    
+                }
+                .logo{
+                    padding-left: 60%;
+                }
+            }
+        }
+
 
     .shop{
 
@@ -203,7 +233,6 @@ footer{
         p{
             font-size: 16px;
             line-height: 1.7rem;
-
         }
     
         .arrow{
@@ -220,13 +249,8 @@ footer{
             line-height: 1.7rem;
         }
     }
+}
 
-    footer{
-        .attribution{
-            padding: 5%;
-        }
-    }
-  }
 
 //Laptop and beyond
 @media screen 
@@ -234,12 +258,12 @@ footer{
     .grid-container{
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: repeat(3, 0.9fr) 50px;
+        grid-template-rows: repeat(3, 1fr) 30px;
         grid-template-areas: 
         "slider slider slider slider shop shop shop"
         "slider slider slider slider shop shop shop"
         "img-dark img-dark about about about img-light img-light"
-        "footer footer footer footer footer footer footer";
+        "foot foot foot foot foot foot foot";
     }
 
     header{
@@ -249,13 +273,18 @@ footer{
         background-image: center center;
         grid-area: slider;
 
-        nav{ 
-            display: flex;
-            .toggle-off{
+        nav{
+            display: block;
+            .mobile-nav{
                 display: none;
             }
-            .toggle-on{
-                display: flex;
+            .desktop-nav{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    list-style-type: none;
+                }
             }
         }
 
@@ -295,8 +324,14 @@ footer{
     }
 
     footer{
-        grid-area: footer;
+        grid-area: foot;
+        color: $dark-gray;
+
+        a{
+            color: $dark-gray;
+        }
+        a:visited{
+            color: $dark-gray;
+        }
     }
-
-
-  }
+}

@@ -232,7 +232,7 @@ footer p {
   padding-top: 10px;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   .grid-container {
     display: -ms-grid;
     display: grid;
@@ -272,7 +272,7 @@ nav .logo {
   }
 }
 
-@media screen and (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .grid-container {
     display: -ms-grid;
     display: grid;
@@ -310,7 +310,21 @@ nav .logo {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     list-style-type: none;
+    margin-top: 10%;
+  }
+  header nav .desktop-nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  header nav .desktop-nav ul li a:visited {
+    color: black;
+  }
+  header nav .desktop-nav ul li a:hover {
+    color: white;
   }
   header .angles {
     position: absolute;

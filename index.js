@@ -1,4 +1,9 @@
 
+  document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '.splide' );
+    splide.mount();
+  } );
+
 //Toggles mobile hamburger menu on and off
 "use strict";
 let toggleMenu = () => {

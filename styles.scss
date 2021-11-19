@@ -1,6 +1,3 @@
-//glidejs
-@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
-
 //Font Styling
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
 $font-family: 'Spartan', sans-serif;
@@ -265,7 +262,7 @@ footer{
   and (min-width: 1200px) {
     .grid-container{
         display: grid;
-        grid-template-columns: repeat(7, 1fr);
+        grid-template-columns: repeat(7, 0.8fr);
         grid-template-rows: repeat(3, 1fr) 30px;
         grid-template-areas: 
         "slider slider slider slider shop shop shop"

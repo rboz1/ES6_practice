@@ -101,7 +101,7 @@ header nav .toggle-on .close {
           flex-grow: 1;
 }
 
-header .angles {
+.splide .angles {
   -ms-flex-item-align: end;
       align-self: flex-end;
   display: -webkit-box;
@@ -119,7 +119,7 @@ header .angles {
   width: 20%;
 }
 
-.shop {
+.splide .shop {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: shop;
@@ -136,20 +136,20 @@ header .angles {
   padding: 15% 8% 15% 8%;
 }
 
-.shop h2 {
+.splide .shop h2 {
   color: black;
   font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 0;
 }
 
-.shop p {
+.splide .shop p {
   color: #a1a1a1;
   line-height: 1.2rem;
   padding-bottom: 10%;
 }
 
-.shop .arrow {
+.splide .shop .arrow {
   width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,17 +250,17 @@ nav .desktop-nav ul {
 nav .logo {
     padding-left: 60%;
   }
-  .shop {
+  .splide .shop {
     padding: 15% 10%;
   }
-  .shop h2 {
+  .splide .shop h2 {
     font-size: 24px;
   }
-  .shop p {
+  .splide .shop p {
     font-size: 16px;
     line-height: 1.7rem;
   }
-  .shop .arrow {
+  .splide .shop .arrow {
     width: 35%;
   }
   .about h3 {
@@ -276,8 +276,8 @@ nav .logo {
   .grid-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[7];
-        grid-template-columns: repeat(7, 1fr);
+    -ms-grid-columns: (0.8fr)[7];
+        grid-template-columns: repeat(7, 0.8fr);
     -ms-grid-rows: (1fr)[3] 30px;
         grid-template-rows: repeat(3, 1fr) 30px;
         grid-template-areas: "slider slider slider slider shop shop shop" "slider slider slider slider shop shop shop" "img-dark img-dark about about about img-light img-light" "foot foot foot foot foot foot foot";
@@ -326,25 +326,27 @@ nav .logo {
   header nav .desktop-nav ul li a:hover {
     color: white;
   }
-  header .angles {
-    position: absolute;
-    right: 28.5%;
-    width: 10.4%;
-    padding: 2% 2%;
-  }
-  .shop {
+  .splide {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     -ms-grid-column: 5;
     -ms-grid-column-span: 3;
     grid-area: shop;
+  }
+  .splide .angles {
+    position: absolute;
+    right: 50%;
+    width: 10.4%;
+    padding: 2% 2%;
+  }
+  .splide .splide-track .splide-list .shop {
     padding: 10% 15% 10% 15%;
   }
-  .shop h2 {
+  .splide .splide-track .splide-list .shop h2 {
     font-size: 40px;
     padding-bottom: 5%;
   }
-  .shop .arrow {
+  .splide .splide-track .splide-list .shop .arrow {
     padding-bottom: 15%;
     width: 50%;
   }

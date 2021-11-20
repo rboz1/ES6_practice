@@ -78,7 +78,7 @@ header{
             text-transform: lowercase;
             margin: 0;
             padding: 10% 10% 10% 7%;
-            width: 83%;
+            width: 100%;
 
             li{
                 a{
@@ -319,29 +319,28 @@ footer{
             width: 10.4%;
             padding: 2% 2%;
         }
-        .splide-track{
-            .splide-list{
-                .shop{
-                    padding: 10% 15% 10% 15%;
-            
-                    h2{
-                        font-size: 40px;
-                        padding-bottom: 5%;
-                    }
-            
-                    .arrow{
-                        padding-bottom: 15%;
-                        width: 50%;
-                    }
-                }
-        
-            }
 
+        .shop{
+            padding: 15%;
+    
+            h2{
+                font-size: 3.5rem;
+                padding-bottom: 5%;
+            }
+            p{
+                font-size: 1.3rem;
+                line-height: 1.5rem;
+            }
+    
+            .arrow{
+                padding-bottom: 15%;
+                width: 40%;
+
+                font-size: 1.2rem;
+            }
         }
 
     }
-
-
 
     .img-dark{
         grid-area: img-dark;
@@ -349,6 +348,15 @@ footer{
 
     .about{
         grid-area: about;
+
+        h3{
+            font-size: 1.3rem;
+        }
+
+        p{
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+        }
     }
 
     .img-light{

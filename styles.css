@@ -83,7 +83,7 @@ header nav .toggle-on {
   text-transform: lowercase;
   margin: 0;
   padding: 10% 10% 10% 7%;
-  width: 83%;
+  width: 100%;
 }
 
 header nav .toggle-on li a {
@@ -339,16 +339,21 @@ nav .logo {
     width: 10.4%;
     padding: 2% 2%;
   }
-  .splide .splide-track .splide-list .shop {
-    padding: 10% 15% 10% 15%;
+  .splide .shop {
+    padding: 15%;
   }
-  .splide .splide-track .splide-list .shop h2 {
-    font-size: 40px;
+  .splide .shop h2 {
+    font-size: 3.5rem;
     padding-bottom: 5%;
   }
-  .splide .splide-track .splide-list .shop .arrow {
+  .splide .shop p {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+  .splide .shop .arrow {
     padding-bottom: 15%;
-    width: 50%;
+    width: 40%;
+    font-size: 1.2rem;
   }
   .img-dark {
     -ms-grid-row: 3;
@@ -361,6 +366,13 @@ nav .logo {
     -ms-grid-column: 3;
     -ms-grid-column-span: 3;
     grid-area: about;
+  }
+  .about h3 {
+    font-size: 1.3rem;
+  }
+  .about p {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
   }
   .img-light {
     -ms-grid-row: 3;

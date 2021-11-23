@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="/modules/splide-default.min.css">
   <script src="index.js"></script>
+  <script src="slider.js"></script>
   <script src="/modules/splide.min.js"></script>
 
   
   <title>Frontend Mentor | Room homepage</title>
 </head>
-<body class="grid-container">
+<body class="grid-container" onload="slide()">
   <header>
     <nav>
       <div class="toggle-off mobile-nav">
@@ -49,7 +50,7 @@
             own style with our collection and make your property a reflection of you and what you love.
           </p>
          <div class="arrow">
-            <div>Shop now</div>
+            <div id = "cat">Shop now</div>
             <a href="#"><svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg></a>
          </div>
         </section>

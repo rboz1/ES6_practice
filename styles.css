@@ -352,8 +352,11 @@ nav .logo {
   }
   .splide .shop .arrow {
     padding-bottom: 15%;
-    width: 30%;
+    width: 40%;
     font-size: 1.2rem;
+  }
+  .splide .shop .arrow a {
+    padding-left: 1%;
   }
   .img-dark {
     -ms-grid-row: 3;

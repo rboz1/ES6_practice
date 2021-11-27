@@ -1,4 +1,4 @@
-//splide.js
+//splide.js event listener
 document.addEventListener( 'DOMContentLoaded', function() {
     var splide = new Splide( '.splide', {
       drag: "true",

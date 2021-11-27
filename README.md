@@ -34,7 +34,7 @@ Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to t
 Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
 ### Links
-- Live Site URL: [Add live site URL here](https://rboz1.github.io/sleek_webpage/)
+- [Live Site URL](https://rboz1.github.io/furniture_webpage/#)
 
 ## My process
 

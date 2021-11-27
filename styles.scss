@@ -37,7 +37,7 @@ header{
     background: url(images/mobile/mobile-image-hero-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: center center;
+    background-position: center center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -100,22 +100,13 @@ header{
 
 
 .splide{
-    .angles{
-        align-self: flex-end;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: black;
-        padding: 3% 5% 3% 5%;
-        width: 20%;
-    }
     .shop{
         grid-area: shop;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     
-        padding: 15% 8% 15% 8%;
+        padding: 15% 12% 15% 12%;
     
         h2{
             color: $black;
@@ -139,6 +130,11 @@ header{
             text-transform: uppercase;
             color: $dark-gray;
             letter-spacing: 0.5rem;
+        }
+        a:hover{
+            svg path{
+                fill: $gray!important;
+            }
         }
     }
 }
@@ -218,6 +214,9 @@ footer{
                     }
                     
                 }
+                .toggle-on{
+                    width: 90%;
+                }
                 .logo{
                     padding-left: 60%;
                 }
@@ -260,6 +259,116 @@ footer{
 //Laptop and beyond
 @media only screen 
   and (min-width: 1200px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(6, 0.2fr);
+        grid-template-rows: repeat(4, 0.3fr) 5px;
+        grid-template-areas: 
+        "slider slider slider shop shop shop"
+        "slider slider slider shop shop shop"
+        "slider slider slider shop shop shop"
+        "img-dark img-dark about about img-light img-light"
+        "foot foot foot foot foot foot";
+
+    }
+
+    header{
+        background: url(images/desktop/desktop-image-hero-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        grid-area: slider;
+
+        nav{
+            display: block;
+            .mobile-nav{
+                display: none;
+            }
+            .desktop-nav{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    list-style-type: none;
+                    margin-top: 10%;
+
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: $black;
+                        }
+
+                        a:visited{
+                            color: $black;
+                        }
+                        a:hover{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .splide{
+        grid-area: shop;
+
+        .shop{
+            padding: 5% 15% 10% 15%;
+    
+            h2{
+                padding-bottom: 5%;
+                font-size: 2.5rem;
+            }
+            p{
+                line-height: 1.3rem;
+            }
+    
+            .arrow{
+                padding-bottom: 15%;
+                width: 40%;
+                a{
+                   padding-left: 1%;
+                }
+            }
+
+        }
+
+    }
+
+    .img-dark{
+        grid-area: img-dark;
+    }
+
+    .about{
+        grid-area: about;
+
+        p{
+            line-height: 1.3rem;
+        }
+    }
+
+    .img-light{
+        grid-area: img-light;
+    }
+
+    footer{
+        grid-area: foot;
+        color: $dark-gray;
+
+        a{
+            color: $dark-gray;
+        }
+        a:visited{
+            color: $dark-gray;
+        }
+    }
+}
+
+//Large screens
+@media only screen 
+  and (min-width: 1950px) {
     .grid-container{
         display: grid;
         grid-template-columns: repeat(7, 0.8fr);
@@ -312,13 +421,6 @@ footer{
 
     .splide{
         grid-area: shop;
-
-        .angles{
-            position: absolute;
-            right: 50%;
-            width: 10.4%;
-            padding: 2% 2%;
-        }
 
         .shop{
             padding: 15%;

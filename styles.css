@@ -22,7 +22,7 @@ header {
   background: url(images/mobile/mobile-image-hero-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: center center;
+  background-position: center center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,24 +101,6 @@ header nav .toggle-on .close {
           flex-grow: 1;
 }
 
-.splide .angles {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: black;
-  padding: 3% 5% 3% 5%;
-  width: 20%;
-}
-
 .splide .shop {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -133,7 +115,7 @@ header nav .toggle-on .close {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 15% 8% 15% 8%;
+  padding: 15% 12% 15% 12%;
 }
 
 .splide .shop h2 {
@@ -167,6 +149,10 @@ header nav .toggle-on .close {
   text-transform: uppercase;
   color: #454545;
   letter-spacing: 0.5rem;
+}
+
+.splide .shop a:hover svg path {
+  fill: #a1a1a1 !important;
 }
 
 .img-dark {
@@ -247,6 +233,10 @@ nav .desktop-nav ul {
     display: none;
   }
   .grid-container header
+nav .toggle-on {
+    width: 90%;
+  }
+  .grid-container header
 nav .logo {
     padding-left: 60%;
   }
@@ -273,6 +263,120 @@ nav .logo {
 }
 
 @media only screen and (min-width: 1200px) {
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (0.2fr)[6];
+        grid-template-columns: repeat(6, 0.2fr);
+    -ms-grid-rows: (0.3fr)[4] 5px;
+        grid-template-rows: repeat(4, 0.3fr) 5px;
+        grid-template-areas: "slider slider slider shop shop shop" "slider slider slider shop shop shop" "slider slider slider shop shop shop" "img-dark img-dark about about img-light img-light" "foot foot foot foot foot foot";
+  }
+  header {
+    background: url(images/desktop/desktop-image-hero-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: slider;
+  }
+  header nav {
+    display: block;
+  }
+  header nav .mobile-nav {
+    display: none;
+  }
+  header nav .desktop-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style-type: none;
+    margin-top: 10%;
+  }
+  header nav .desktop-nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  header nav .desktop-nav ul li a:visited {
+    color: black;
+  }
+  header nav .desktop-nav ul li a:hover {
+    color: white;
+  }
+  .splide {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+    grid-area: shop;
+  }
+  .splide .shop {
+    padding: 5% 15% 10% 15%;
+  }
+  .splide .shop h2 {
+    padding-bottom: 5%;
+    font-size: 2.5rem;
+  }
+  .splide .shop p {
+    line-height: 1.3rem;
+  }
+  .splide .shop .arrow {
+    padding-bottom: 15%;
+    width: 40%;
+  }
+  .splide .shop .arrow a {
+    padding-left: 1%;
+  }
+  .img-dark {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: img-dark;
+  }
+  .about {
+    -ms-grid-row: 4;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: about;
+  }
+  .about p {
+    line-height: 1.3rem;
+  }
+  .img-light {
+    -ms-grid-row: 4;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-area: img-light;
+  }
+  footer {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-area: foot;
+    color: #454545;
+  }
+  footer a {
+    color: #454545;
+  }
+  footer a:visited {
+    color: #454545;
+  }
+}
+
+@media only screen and (min-width: 1950px) {
   .grid-container {
     display: -ms-grid;
     display: grid;
@@ -332,12 +436,6 @@ nav .logo {
     -ms-grid-column: 5;
     -ms-grid-column-span: 3;
     grid-area: shop;
-  }
-  .splide .angles {
-    position: absolute;
-    right: 50%;
-    width: 10.4%;
-    padding: 2% 2%;
   }
   .splide .shop {
     padding: 15%;

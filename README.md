@@ -51,15 +51,15 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-I've worked with libraries before in Python, but this was one of my first times using a 3rd party library in JS. It made me realize yet again how important clear documentation is. It took me a while to understand the documentation and figure out how to get the library set-up and ready to use. The actual utilization part was better documented and fairly simple. 
+I've worked with libraries before in **Python**, but this was one of my first times using a 3rd party library in **JS**. It made me realize yet again how important clear documentation is. It took me a while to understand the documentation and figure out how to get the library set-up and ready to use. The actual utilization part was better documented and fairly simple. 
 
-I also played with creating event listeners in JS! I now recognize truly how powerful the ability to manipulate HTML via the DOM is. I want to explore this more and try to use JS instead of HTML when I can in the future.
+I also played with creating event listeners in JS! I now recognize truly how powerful the ability to manipulate **HTML** via the **DOM** is. I want to explore this more and try to use **JS** instead of **HTML** when I can in the future.
 
 **add code snippet**
 
 ### Continued development
 
-I want to understand more about creating modular code in vanilla JS as well as library import/export. I love working with libraries now and I want to work with more in the future! I've had my eye on [Anime.js](https://animejs.com/) for a while now.
+I want to understand more about creating modular code in vanilla JS as well as **library import/export**. I love working with libraries now and I want to work with more in the future! I've had my eye on [Anime.js](https://animejs.com/) for a while now.
 
 ### Useful resources
 
@@ -67,4 +67,4 @@ I want to understand more about creating modular code in vanilla JS as well as l
 
 ## Author
 
-- Website - [Rachel Bozadjian](https://www.your-site.com)
+- Website - [Rachel Bozadjian](https://github.com/rboz1)

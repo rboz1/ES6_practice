@@ -1,4 +1,4 @@
-# Sleek Webpage
+# Furniture Webpage
 
 ## Table of contents
 
@@ -44,45 +44,27 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS (Sass/SCSS)
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [Splide.js](https://splidejs.com/) - JS Carousel library
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I've worked with libraries before in Python, but this was one of my first times using a 3rd party library in JS. It made me realize yet again how important clear documentation is. It took me a while to understand the documentation and figure out how to get the library set-up and ready to use. The actual utilization part was better documented and fairly simple. 
 
-To see how you can add code snippets, see below:
+I also played with creating event listeners in JS! I now recognize truly how powerful the ability to manipulate HTML via the DOM is. I want to explore this more and try to use JS instead of HTML when I can in the future.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+**add code snippet**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
+I want to understand more about creating modular code in vanilla JS as well as library import/export. I love working with libraries now and I want to work with more in the future! I've had my eye on [Anime.js](https://animejs.com/) for a while now.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Adding Event Listeners](https://www.w3schools.com/js/js_htmldom_eventlistener.asp) - Gotta always have a look at W3 schools or MDN when learning new things!
 
 ## Author
 

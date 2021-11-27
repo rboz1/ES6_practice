@@ -12,7 +12,6 @@
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -68,4 +67,4 @@ I want to understand more about creating modular code in vanilla JS as well as l
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Rachel Bozadjian](https://www.your-site.com)

@@ -53,7 +53,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 I've worked with libraries before in **Python**, but this was one of my first times using a 3rd party library in **JS**. It made me realize yet again how important clear documentation is. It took me a while to understand the documentation and figure out how to get the library set-up and ready to use. The actual utilization part was better documented and fairly simple. 
 
-I also played with creating event listeners in JS! I now recognize truly how powerful the ability to manipulate **HTML** via the **DOM** is. I want to explore this more and try to use **JS** instead of **HTML** when I can in the future.
+I also played with creating event listeners in **JS**! I now recognize truly how powerful the ability to manipulate **HTML** via the **DOM** is. I want to explore this more and try to use **JS** instead of **HTML** when I can in the future.
 
 **add code snippet**
 

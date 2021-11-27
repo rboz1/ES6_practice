@@ -13,7 +13,6 @@ document.addEventListener( 'DOMContentLoaded', function() {
   } );
 
 //Toggles mobile hamburger menu on and off if window width is below 1200px
-"use strict";
 let toggleMenu = () => {
   let menu = document.getElementsByClassName("toggle-on");
 

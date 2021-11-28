@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 .grid-container {
   display: -ms-grid;
   display: grid;

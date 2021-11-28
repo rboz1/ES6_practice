@@ -9,6 +9,10 @@ $dark-gray: hsl(0, 0%, 27%);
 
 //Mobile Styles
 
+html{
+    overflow-x: hidden;
+    max-width: 100%;
+}
 .grid-container{
     display: grid;
     grid-template-columns: 1fr;

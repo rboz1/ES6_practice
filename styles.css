@@ -8,6 +8,7 @@
       grid-template-rows: 1fr 1fr repeat(3, 0.5fr) 50px;
       grid-template-areas: "slider" "shop" "img-dark" "about" "img-light" "footer";
   margin: 0;
+  overflow: hidden;
   font-family: "Spartan", sans-serif;
   font-size: 12px;
 }
@@ -20,7 +21,7 @@
 header {
   background: url(images/mobile/mobile-image-hero-1.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   display: -webkit-box;
   display: -ms-flexbox;

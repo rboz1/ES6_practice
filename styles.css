@@ -9,13 +9,14 @@
       grid-template-areas: "slider" "shop" "img-dark" "about" "img-light" "footer";
   margin: 0;
   overflow: hidden;
+  width: 100vw;
+  height: 100vh;
   font-family: "Spartan", sans-serif;
   font-size: 12px;
 }
 
 .grid-container img {
-  height: 100%;
-  width: 100%;
+  max-width: 100%;
 }
 
 header {

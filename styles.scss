@@ -8,7 +8,7 @@ $white: hsl(0, 0%, 100%);
 $dark-gray: hsl(0, 0%, 27%);
 
 //Mobile Styles
-
+@media screen and (max-width: 768px){
 .grid-container{
     display: grid;
     grid-template-columns: 1fr;
@@ -187,6 +187,7 @@ $dark-gray: hsl(0, 0%, 27%);
             padding-top: 10px;
         }
     }
+}
 
 
 //Media Queries

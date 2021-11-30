@@ -83,7 +83,6 @@ header nav .toggle-on {
   text-transform: lowercase;
   margin: 0;
   padding: 10% 10% 10% 7%;
-  width: 100%;
 }
 
 header nav .toggle-on li a {
@@ -234,7 +233,7 @@ nav .desktop-nav ul {
   }
   .grid-container header
 nav .toggle-on {
-    width: 90%;
+    width: 83%;
   }
   .grid-container header
 nav .logo {

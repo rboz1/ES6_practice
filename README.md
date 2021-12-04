@@ -4,8 +4,8 @@
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
+  - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -23,12 +23,12 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Navigate the slider using either their mouse/trackpad or keyboard
 
+### Links
+[Active Site Link](https://rboz1.github.io/furniture_webpage/#)
+
 ### Screenshot
 
 ![screenshot](./screenshot.jpg)
-
-### Links
-[Active Site Link](https://rboz1.github.io/furniture_webpage/#)
 
 ## My process
 

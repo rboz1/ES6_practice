@@ -62,6 +62,8 @@ I want to understand more about creating modular code in vanilla JS as well as *
 ### Useful resources
 
 - [Adding Event Listeners](https://www.w3schools.com/js/js_htmldom_eventlistener.asp) - Gotta always have a look at W3 schools or MDN when learning new things!
+- [Viewport Meta Tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag) - This article explained why I was having issues scaling my site to mobile viewports.
+
 
 ## Author
 

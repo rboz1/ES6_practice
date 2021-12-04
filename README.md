@@ -47,8 +47,6 @@ I've worked with libraries before in **Python**, but this was one of my first ti
 
 I also played with creating event listeners in **JS**! I now recognize truly how powerful the ability to manipulate **HTML** via the **DOM** is. I want to explore this more and try to use **JS** instead of **HTML** when I can in the future.
 
-**add code snippet**
-
 ### Continued development
 
 I want to understand more about creating modular code in vanilla JS as well as **library import/export**. I love working with libraries now and I want to work with more in the future! I've had my eye on [Anime.js](https://animejs.com/) for a while now.

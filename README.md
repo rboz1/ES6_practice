@@ -28,7 +28,7 @@ Users should be able to:
 ![screenshot](./screenshot.jpg)
 
 ### Links
-- [Live Site URL](https://rboz1.github.io/furniture_webpage/#)
+- [Active Site Link](https://rboz1.github.io/furniture_webpage/#)
 
 ## My process
 

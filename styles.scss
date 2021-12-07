@@ -62,9 +62,7 @@ $dark-gray: hsl(0, 0%, 27%);
                 padding-top: 18%;
             }
     
-            .logo{
-                padding-left: 50%;
-            }
+
     
             .toggle-on{
                 display: none;
@@ -89,6 +87,7 @@ $dark-gray: hsl(0, 0%, 27%);
     
                 .menu{
                     padding-left: 5%;
+                    font-size: 200%;
                 }
                 
                 .close{
@@ -219,7 +218,7 @@ $dark-gray: hsl(0, 0%, 27%);
                     width: 83%;
                 }
                 .logo{
-                    padding-left: 60%;
+                    padding-left: 30%;
                 }
             }
         }

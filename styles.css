@@ -61,10 +61,6 @@ header nav .toggle-off {
   padding-top: 18%;
 }
 
-header nav .logo {
-  padding-left: 50%;
-}
-
 header nav .toggle-on {
   display: none;
   position: absolute;
@@ -92,6 +88,7 @@ header nav .toggle-on li a {
 
 header nav .toggle-on .menu {
   padding-left: 5%;
+  font-size: 200%;
 }
 
 header nav .toggle-on .close {
@@ -237,7 +234,7 @@ nav .toggle-on {
   }
   .grid-container header
 nav .logo {
-    padding-left: 60%;
+    padding-left: 30%;
   }
   .splide .shop {
     padding: 15% 10%;

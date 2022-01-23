@@ -12,14 +12,13 @@ $dark-gray: hsl(0, 0%, 27%);
 .grid-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr repeat(3, 0.5fr) 50px;
+    grid-template-rows: 1fr 1fr repeat(3, 0.5fr);
     grid-template-areas: 
     "slider"
     "shop"
     "img-dark"
     "about"
-    "img-light"
-    "footer";
+    "img-light";
 
     margin: 0%;
     overflow-x: hidden;
@@ -31,7 +30,7 @@ $dark-gray: hsl(0, 0%, 27%);
 
     font-family: $font-family;
     font-size: 12px;
-    }
+}
     
     header{
         background: url(images/mobile/mobile-image-hero-1.jpg);
@@ -168,43 +167,24 @@ $dark-gray: hsl(0, 0%, 27%);
     .img-light{
         grid-area: img-light;
     }
-    
-    footer{
-        grid-area: footer;
-        font-size: 11px; 
-        text-align: center;
-        color: $dark-gray;
-    
-        a{
-            color: $dark-gray;
-        }
-        a:visited{
-            color: $dark-gray;
-        }
-    
-        p{
-            padding-top: 10px;
-        }
-    }
 
 
 //Media Queries
 //Tablets
 @media only screen 
   and (min-width: 768px) 
-  and (max-width: 1200px) {
+  and (max-width: 1400px) {
 
     .grid-container{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1.4fr 0.5fr repeat(3, 0.5fr) 50px;
+        grid-template-rows: 1.4fr 0.5fr repeat(3, 0.5fr);
         grid-template-areas: 
         "slider"
         "shop"
         "img-dark"
         "about"
-        "img-light"
-        "footer";
+        "img-light";
 
         header
             nav{
@@ -258,17 +238,18 @@ $dark-gray: hsl(0, 0%, 27%);
 
 //Laptop and beyond
 @media only screen 
-  and (min-width: 1200px) {
+  and (min-width: 1401px) {
     .grid-container{
+        height: 100%;
+        overflow-y: hidden;
         display: grid;
         grid-template-columns: repeat(6, 0.2fr);
-        grid-template-rows: repeat(4, 0.3fr) 5px;
+        grid-template-rows: repeat(4, 0.3fr);
         grid-template-areas: 
         "slider slider slider shop shop shop"
         "slider slider slider shop shop shop"
         "slider slider slider shop shop shop"
-        "img-dark img-dark about about img-light img-light"
-        "foot foot foot foot foot foot";
+        "img-dark img-dark about about img-light img-light";
 
     }
 
@@ -352,32 +333,20 @@ $dark-gray: hsl(0, 0%, 27%);
     .img-light{
         grid-area: img-light;
     }
-
-    footer{
-        grid-area: foot;
-        color: $dark-gray;
-
-        a{
-            color: $dark-gray;
-        }
-        a:visited{
-            color: $dark-gray;
-        }
-    }
 }
 
 //Large screens
 @media only screen 
-  and (min-width: 1950px) {
+  and (min-width: 1800px) {
     .grid-container{
         display: grid;
-        grid-template-columns: repeat(7, 0.8fr);
-        grid-template-rows: repeat(3, 1fr) 30px;
+        grid-template-columns: repeat(6, 0.2fr);
+        grid-template-rows: repeat(4, 0.3fr);
         grid-template-areas: 
-        "slider slider slider slider shop shop shop"
-        "slider slider slider slider shop shop shop"
-        "img-dark img-dark about about about img-light img-light"
-        "foot foot foot foot foot foot foot";
+        "slider slider slider shop shop shop"
+        "slider slider slider shop shop shop"
+        "slider slider slider shop shop shop"
+        "img-dark img-dark about about img-light img-light";
     }
 
     header{
@@ -467,17 +436,5 @@ $dark-gray: hsl(0, 0%, 27%);
 
     .img-light{
         grid-area: img-light;
-    }
-
-    footer{
-        grid-area: foot;
-        color: $dark-gray;
-
-        a{
-            color: $dark-gray;
-        }
-        a:visited{
-            color: $dark-gray;
-        }
     }
 }

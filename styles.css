@@ -4,9 +4,9 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 1fr (0.5fr)[3] 50px;
-      grid-template-rows: 1fr 1fr repeat(3, 0.5fr) 50px;
-      grid-template-areas: "slider" "shop" "img-dark" "about" "img-light" "footer";
+  -ms-grid-rows: 1fr 1fr (0.5fr)[3];
+      grid-template-rows: 1fr 1fr repeat(3, 0.5fr);
+      grid-template-areas: "slider" "shop" "img-dark" "about" "img-light";
   margin: 0%;
   overflow-x: hidden;
   font-family: "Spartan", sans-serif;
@@ -193,36 +193,15 @@ header nav .toggle-on .close {
   grid-area: img-light;
 }
 
-footer {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  grid-area: footer;
-  font-size: 11px;
-  text-align: center;
-  color: #454545;
-}
-
-footer a {
-  color: #454545;
-}
-
-footer a:visited {
-  color: #454545;
-}
-
-footer p {
-  padding-top: 10px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
   .grid-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 1.4fr 0.5fr (0.5fr)[3] 50px;
-        grid-template-rows: 1.4fr 0.5fr repeat(3, 0.5fr) 50px;
-        grid-template-areas: "slider" "shop" "img-dark" "about" "img-light" "footer";
+    -ms-grid-rows: 1.4fr 0.5fr (0.5fr)[3];
+        grid-template-rows: 1.4fr 0.5fr repeat(3, 0.5fr);
+        grid-template-areas: "slider" "shop" "img-dark" "about" "img-light";
   }
   .grid-container header
 nav .desktop-nav ul {
@@ -258,15 +237,17 @@ nav .logo {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1401px) {
   .grid-container {
+    height: 100%;
+    overflow-y: hidden;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (0.2fr)[6];
         grid-template-columns: repeat(6, 0.2fr);
-    -ms-grid-rows: (0.3fr)[4] 5px;
-        grid-template-rows: repeat(4, 0.3fr) 5px;
-        grid-template-areas: "slider slider slider shop shop shop" "slider slider slider shop shop shop" "slider slider slider shop shop shop" "img-dark img-dark about about img-light img-light" "foot foot foot foot foot foot";
+    -ms-grid-rows: (0.3fr)[4];
+        grid-template-rows: repeat(4, 0.3fr);
+        grid-template-areas: "slider slider slider shop shop shop" "slider slider slider shop shop shop" "slider slider slider shop shop shop" "img-dark img-dark about about img-light img-light";
   }
   header {
     background: url(images/desktop/desktop-image-hero-1.jpg);
@@ -357,30 +338,17 @@ nav .logo {
     -ms-grid-column-span: 2;
     grid-area: img-light;
   }
-  footer {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-area: foot;
-    color: #454545;
-  }
-  footer a {
-    color: #454545;
-  }
-  footer a:visited {
-    color: #454545;
-  }
 }
 
-@media only screen and (min-width: 1950px) {
+@media only screen and (min-width: 1800px) {
   .grid-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (0.8fr)[7];
-        grid-template-columns: repeat(7, 0.8fr);
-    -ms-grid-rows: (1fr)[3] 30px;
-        grid-template-rows: repeat(3, 1fr) 30px;
-        grid-template-areas: "slider slider slider slider shop shop shop" "slider slider slider slider shop shop shop" "img-dark img-dark about about about img-light img-light" "foot foot foot foot foot foot foot";
+    -ms-grid-columns: (0.2fr)[6];
+        grid-template-columns: repeat(6, 0.2fr);
+    -ms-grid-rows: (0.3fr)[4];
+        grid-template-rows: repeat(4, 0.3fr);
+        grid-template-areas: "slider slider slider shop shop shop" "slider slider slider shop shop shop" "slider slider slider shop shop shop" "img-dark img-dark about about img-light img-light";
   }
   header {
     background: url(images/desktop/desktop-image-hero-1.jpg);
@@ -388,9 +356,9 @@ nav .logo {
     background-size: cover;
     background-image: center center;
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
+    -ms-grid-row-span: 3;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
+    -ms-grid-column-span: 3;
     grid-area: slider;
   }
   header nav {
@@ -428,8 +396,8 @@ nav .logo {
   }
   .splide {
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 5;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 4;
     -ms-grid-column-span: 3;
     grid-area: shop;
   }
@@ -453,15 +421,15 @@ nav .logo {
     padding-left: 1%;
   }
   .img-dark {
-    -ms-grid-row: 3;
+    -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: img-dark;
   }
   .about {
-    -ms-grid-row: 3;
+    -ms-grid-row: 4;
     -ms-grid-column: 3;
-    -ms-grid-column-span: 3;
+    -ms-grid-column-span: 2;
     grid-area: about;
   }
   .about h3 {
@@ -472,23 +440,10 @@ nav .logo {
     line-height: 1.5rem;
   }
   .img-light {
-    -ms-grid-row: 3;
-    -ms-grid-column: 6;
+    -ms-grid-row: 4;
+    -ms-grid-column: 5;
     -ms-grid-column-span: 2;
     grid-area: img-light;
-  }
-  footer {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 7;
-    grid-area: foot;
-    color: #454545;
-  }
-  footer a {
-    color: #454545;
-  }
-  footer a:visited {
-    color: #454545;
   }
 }
 /*# sourceMappingURL=styles.css.map */

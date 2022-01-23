@@ -89,7 +89,7 @@ I want to understand more about creating modular code in vanilla JS as well as *
 
 1. Clone the repo
    ```sh
-   git clone https://rboz1.github.io/portfolio_site/
+   git clone https://rboz1.github.io/furniture_webpage/#
    ```
 <p align="right">(<a href="#top">back to top</a>)</p>
 
